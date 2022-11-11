@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Await for a timer</title>
+		<link rel="stylesheet" href="./css/style.css" />
+		<script
+			src="https://code.jquery.com/jquery-3.6.1.min.js"
+			integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+			crossorigin="anonymous"
+		></script>
+		<script src="./js/main.js" defer></script>
+	</head>
+	<body>
+		<div id="container">
+			<h1>Await for a timer</h1>
+			<p id="intro">
+				The purpose of this exercise is to create a timer for
+				<select name="timer" id="timer">
+					<option value="5">5</option>
+					<option value="10">10</option>
+					<option value="20">20</option>
+					<option value="30">30</option>
+				</select>
+				seconds
+			</p>
+			<div id="timer-bar"></div>
+			<button id="start-timer">Start timer</button>
+			<button id="stop-timer">Stop timer</button>
+			<p id="message"></p>
+			<br />
+			<h2>...while doing something else</h2>
+			<button class="demo-button">Toggle me</button>
+			<button class="demo-button">Toggle me</button>
+			<button class="demo-button">Toggle me</button>
+			<button class="demo-button">Toggle me</button>
+		</div>
+	</body>
+</html>

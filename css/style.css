@@ -1,0 +1,90 @@
+* {
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+body {
+	padding: 50px;
+	display: flex;
+	height: 100vh;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: darkslateblue;
+	color: #fff;
+	font-size: 20px;
+}
+
+#container {
+	display: block;
+}
+
+#intro,
+#message {
+	margin: 10px 0;
+}
+
+select#timer {
+	width: 3rem;
+	height: 2rem;
+	margin: 0 10px;
+	text-align: center;
+	font-size: 1rem;
+	border-radius: 5px;
+}
+
+#timer-bar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2rem;
+	font-weight: bold;
+	color: #fff;
+	width: 500px;
+	height: 50px;
+	margin: 20px 0;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	display: flex;
+	background-image: url('../img/progress-bar-background.jpg');
+	background-repeat: no-repeat;
+	transition: background-position 0.75s;
+}
+
+button {
+	padding: 1rem;
+	font-size: 1rem;
+	color: #fff;
+	cursor: pointer;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	margin-right: 10px;
+}
+
+button#start-timer {
+	background-color: greenyellow;
+	color: #000;
+}
+
+button#stop-timer {
+	background-color: brown;
+}
+
+button#start-timer.disabled,
+button#stop-timer.disabled {
+	background-color: lightgray;
+	color: darkgrey;
+	cursor: not-allowed;
+}
+
+button.demo-button {
+	margin-top: 30px;
+	background-color: blueviolet;
+	color: #fff;
+}
+
+button.demo-button.active {
+	background-color: lightsalmon;
+	color: blueviolet;
+}
